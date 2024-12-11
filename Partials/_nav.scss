@@ -1,0 +1,49 @@
+nav {
+    border: $text-color solid 0.05px;
+    padding: 1rem;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 80%;
+    .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $text-color;
+
+        .logo-img {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        & a {
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+
+    .get {
+        text-decoration: none;
+        color: $text-color;
+    }
+    .hamburg-menu {
+        border: none;
+        background: transparent;
+        & i {
+            color: $text-color;
+        }
+    }
+    @media (max-width: 465px) {
+        .nav-links {
+            display: none;
+        }
+        .get {
+            display: none;
+        }
+    }
+}

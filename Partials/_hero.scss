@@ -1,0 +1,108 @@
+.hero {
+    display: flex;
+    gap: 1.6rem;
+    padding: 1.6rem 0rem;
+    .profile-card {
+        width: 25%;
+        padding: 0rem 1.6rem;
+        border: $text-color solid 0.05px;
+        border-radius: .3rem;
+        .profile-image {
+            width: 100%;
+            & img {
+                width: 100%;
+                display: block;
+            }
+        }
+        .profile-text {
+            & h3 {
+                padding: 1.6rem 0rem;
+            }
+        }
+        .profile-buttons {
+            padding: 1.6rem 0rem;
+            display: flex;
+            gap: 1.6rem;
+        }
+    }
+    .my-expert-area {
+        width: 75%;
+        padding: 0rem 1.6rem;
+        border: $text-color solid 0.05px;
+        border-radius: .3rem;
+        .my-expert-heading {
+            & h2 {
+                padding: 1rem 0rem;
+            }
+        }
+        .my-expert-grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            border: $text-color solid 0.05px;
+            border-radius: .3rem;
+            padding: 1.6rem;
+            .my-expert-card {
+                padding: 1.6rem 0rem;
+                .my-expert-icon {
+                    background-color: $card-color;
+                    border: $text-color solid 0.05px;
+                    border-radius: .3rem;
+                    text-align: center;
+                    padding: 4rem;
+                    & i {
+                        font-size: 4rem;
+                    }
+                    & h5 {
+                        padding: 1rem 0rem;
+                    }
+                }
+            }
+        }
+        .my-expert-text-container {
+            border: $text-color solid 0.05px;
+            border-radius: .3rem;
+            padding: 1.6rem;
+            margin: 1.6rem 0rem;
+            & p {
+                padding-top: 2rem;
+                padding-bottom: 5rem;
+            }
+            .bullets-container {
+                display: flex;
+                .bullets {
+                    display: flex;
+                    align-items: center;
+                    padding: 2rem 0rem;
+                    & i {
+                        padding: 0rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:1024px){
+        flex-direction: column;
+        padding: 1.6rem;
+        .profile-card {
+            width: 100%;
+            order: 1;
+        }
+        .my-expert-area {
+            width: 100%;
+            order: 2;
+        }
+    }
+    @media (max-width:465px){
+        flex-direction: column;
+        padding: 1.6rem;
+        .profile-card {
+            width: 100%;
+            order: 1;
+        }
+        .my-expert-area {
+            width: 100%;
+            order: 2;
+        }
+    }
+}
