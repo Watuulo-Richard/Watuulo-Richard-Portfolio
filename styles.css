@@ -66,6 +66,11 @@ nav .hamburg-menu {
 nav .hamburg-menu i {
   color: #f8fafc;
 }
+@media (max-width: 1024px) {
+  nav .hamburg-menu {
+    display: none;
+  }
+}
 @media (max-width: 465px) {
   nav .nav-links {
     display: none;

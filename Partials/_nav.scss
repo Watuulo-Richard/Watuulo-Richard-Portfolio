@@ -38,6 +38,12 @@ nav {
             color: $text-color;
         }
     }
+    @media (max-width: 1024px) {
+        .hamburg-menu {
+            display: none;
+        }
+        
+    }
     @media (max-width: 465px) {
         .nav-links {
             display: none;
