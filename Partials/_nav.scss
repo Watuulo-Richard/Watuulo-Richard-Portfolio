@@ -5,7 +5,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // width: 80%;
     .logo {
         display: flex;
         align-items: center;
@@ -45,6 +44,7 @@ nav {
         
     }
     @media (max-width: 465px) {
+        margin: 0rem 1.6rem;
         .nav-links {
             display: none;
         }
