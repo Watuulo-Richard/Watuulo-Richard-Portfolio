@@ -7,3 +7,54 @@
     border: $text-color solid 0.05px;
     width: 100%;
 }
+
+.card-item {
+    // background-color: red;
+    width: 50%;
+    height: 50%;
+    border: $text-color solid 0.05px;
+    border-radius: .5rem;
+    padding: 2rem;
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       .left {
+        h3 {
+
+        }
+        p {
+            font-size: 1rem;
+            padding: 1rem 0rem;
+        }
+       }
+       .right {
+        background-color: $card-color;
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & i {
+
+        }
+       } 
+    }
+    .card-image {
+        padding: 1rem 0rem;
+        width: 100%;
+        transition: all .4s ease-in-out;
+        & img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 1.5rem;
+        }
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}

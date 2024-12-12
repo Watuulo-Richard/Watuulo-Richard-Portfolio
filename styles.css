@@ -29,6 +29,48 @@ body {
   width: 100%;
 }
 
+.card-item {
+  width: 50%;
+  height: 50%;
+  border: #f8fafc solid 0.05px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.card-item .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-item .card-header .left p {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+.card-item .card-header .right {
+  background-color: #101010;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item .card-image {
+  padding: 1rem 0rem;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.card-item .card-image img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem;
+}
+.card-item .card-image:hover {
+  scale: 1.05;
+}
+
 nav {
   border: #f8fafc solid 0.05px;
   padding: 1rem;
@@ -321,4 +363,29 @@ nav .hamburg-menu i {
   .hero .my-expert-area .my-expert-text-container .bullets-container {
     flex-direction: column;
   }
+}
+
+.two-card-section {
+  margin: 1.6rem 0rem;
+  padding: 5rem 0rem;
+  display: flex;
+  gap: 1.6rem;
+}
+@media (max-width: 465px) {
+  .two-card-section {
+    flex-direction: column;
+  }
+  .two-card-section .card-item {
+    width: 100%;
+  }
+}
+
+.three-card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.6rem;
+}
+.three-card-section .card-item {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
