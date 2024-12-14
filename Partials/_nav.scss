@@ -38,7 +38,14 @@ nav {
         }
     }
     @media (max-width: 1024px) {
+        margin: 1.6rem;
+        .nav-links {
+            display: none;
+        }
         .hamburg-menu {
+            display: block;
+        }
+        .get {
             display: none;
         }
         

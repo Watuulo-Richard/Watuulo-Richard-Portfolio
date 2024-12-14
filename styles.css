@@ -15,8 +15,7 @@ body {
   font-family: "Inter", serif;
   color: #f8fafc;
   max-width: 1024px;
-  margin: 0 auto;
-  padding: 1rem 0rem;
+  margin: 1rem auto;
 }
 
 .btn {
@@ -109,7 +108,16 @@ nav .hamburg-menu i {
   color: #f8fafc;
 }
 @media (max-width: 1024px) {
+  nav {
+    margin: 1.6rem;
+  }
+  nav .nav-links {
+    display: none;
+  }
   nav .hamburg-menu {
+    display: block;
+  }
+  nav .get {
     display: none;
   }
 }
@@ -195,7 +203,7 @@ nav .hamburg-menu i {
   padding: 1rem 0rem;
 }
 .hero .my-expert-area .my-expert-text-container {
-  height: 45%;
+  height: 46.8%;
   border: #f8fafc solid 0.05px;
   border-radius: 0.3rem;
   padding: 1rem;
@@ -215,6 +223,45 @@ nav .hamburg-menu i {
 .hero .my-expert-area .my-expert-text-container .bullets-container .bullets i {
   padding: 0rem 3rem;
 }
+@media (max-width: 1280px) {
+  .hero {
+    padding: 1.6rem;
+  }
+  .hero .profile-card {
+    width: 100%;
+    order: 1;
+  }
+  .hero .my-expert-area {
+    width: 100%;
+    height: 60vh;
+    order: 2;
+    border: none;
+  }
+  .hero .my-expert-area .my-expert-heading {
+    height: 5%;
+  }
+  .hero .my-expert-area .my-expert-text-container {
+    height: 76%;
+    border: #f8fafc solid 0.05px;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 1.6rem 0rem;
+  }
+  .hero .my-expert-area .my-expert-text-container p {
+    padding-top: 1.6rem;
+  }
+  .hero .my-expert-area .my-expert-text-container .bullets-container {
+    display: flex;
+  }
+  .hero .my-expert-area .my-expert-text-container .bullets-container .bullets {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem;
+  }
+  .hero .my-expert-area .my-expert-text-container .bullets-container .bullets i {
+    padding: 0rem 3rem;
+  }
+}
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -226,6 +273,7 @@ nav .hamburg-menu i {
   }
   .hero .my-expert-area {
     width: 100%;
+    height: 60vh;
     order: 2;
     border: none;
   }
@@ -366,14 +414,23 @@ nav .hamburg-menu i {
 }
 
 .two-card-section {
-  margin: 1.6rem 0rem;
-  padding: 5rem 0rem;
+  padding: 6rem 0rem;
   display: flex;
   gap: 1.6rem;
+}
+@media (max-width: 1024px) {
+  .two-card-section {
+    flex-direction: column;
+    padding: 1.6rem;
+  }
+  .two-card-section .card-item {
+    width: 100%;
+  }
 }
 @media (max-width: 465px) {
   .two-card-section {
     flex-direction: column;
+    padding: 1.6rem;
   }
   .two-card-section .card-item {
     width: 100%;
@@ -388,4 +445,188 @@ nav .hamburg-menu i {
 .three-card-section .card-item {
   height: 100%;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .three-card-section {
+    padding: 1.6rem;
+  }
+}
+@media (max-width: 495px) {
+  .three-card-section {
+    padding: 1.6rem;
+  }
+}
+
+.testimonials {
+  padding: 6rem 0rem;
+  display: flex;
+  gap: 1.6rem;
+}
+.testimonials .testimonial-cards {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: #f8fafc solid 0.05px;
+  width: 70%;
+}
+.testimonials .testimonial-cards .image-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials .testimonial-cards .image-text .testimonial-image-container {
+  width: 75px;
+  height: 75px;
+}
+.testimonials .testimonial-cards .image-text .testimonial-image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 37.5px;
+}
+.testimonials .testimonial-cards .testimonial-statement {
+  padding: 2rem 0rem;
+}
+.testimonials .testimonial-cards .arrow-icons {
+  display: flex;
+  gap: 1rem;
+}
+.testimonials .testimonial-cards .arrow-icons .left {
+  cursor: pointer;
+  background: #1e293b;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.testimonials .testimonial-cards .arrow-icons .right {
+  cursor: pointer;
+  background: #1e293b;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.testimonials .lets-work-together {
+  width: 30%;
+  border: #f8fafc solid 0.05px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .lets-work-together a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #f8fafc;
+}
+.testimonials .lets-work-together a p {
+  padding: 1rem 0rem;
+}
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 1.6rem;
+  }
+}
+@media (max-width: 495px) {
+  .testimonials {
+    flex-direction: column;
+    padding: 1.6rem;
+  }
+  .testimonials .testimonial-cards {
+    width: 100%;
+  }
+  .testimonials .testimonial-cards .arrow-icons {
+    justify-content: center;
+  }
+  .testimonials .lets-work-together {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.6rem;
+}
+.social-links .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  border-radius: 0.5rem;
+  border: #f8fafc solid 0.05px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .social-links {
+    padding: 1.6rem;
+  }
+}
+@media (max-width: 495px) {
+  .social-links {
+    padding: 1.6rem;
+  }
+}
+
+.footer {
+  padding: 6rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .close-heading .logo {
+  text-decoration: none;
+  color: #f8fafc;
+}
+.footer .close-heading .logo .logo-img {
+  display: flex;
+  align-items: center;
+}
+.footer .close-heading .logo .logo-img i {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer .close-heading .logo .logo-img p {
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.footer .close-heading .logo .logo-img p:hover {
+  border-bottom: #f8fafc solid 5px;
+}
+.footer .copyrights {
+  padding: 1.6rem 0rem;
+}
+.footer .copyrights p {
+  font-size: 1rem;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 1.6rem;
+  }
+}
+@media (max-width: 495px) {
+  .footer {
+    padding: 1.6rem;
+  }
+  .footer .copyrights {
+    padding: 1.6rem 0rem;
+    text-align: center;
+  }
+  .footer .copyrights p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

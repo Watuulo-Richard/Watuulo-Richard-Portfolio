@@ -1,0 +1,21 @@
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.6rem;
+    .social-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 2rem;
+        border-radius: .5rem;
+        border: $text-color solid 0.05px;
+        width: 100%;
+    }
+    @media (max-width: 1024px){
+        padding: 1.6rem;
+    }
+    @media (max-width: 495px){
+        padding: 1.6rem;
+        
+    }
+}

@@ -1,10 +1,17 @@
 .two-card-section {
-    margin: 1.6rem 0rem;
-    padding: 5rem 0rem;
+    padding: 6rem 0rem;
     display: flex;
     gap: 1.6rem;
+    @media (max-width: 1024px){
+        flex-direction: column;
+        padding: 1.6rem;
+        .card-item {
+            width: 100%;
+        }
+    }
     @media (max-width: 465px){
         flex-direction: column;
+        padding: 1.6rem;
         .card-item {
             width: 100%;
         }
